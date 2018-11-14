@@ -41,7 +41,7 @@ public class MovieController {
     public HttpResponse<Movie> addBook(@Body @Valid Movie movie) {
         Movie createdMovie = this.movieRepository.save(movie);
 
-        return HttpResponse.created(URI.create(String.format("/api/books/%s", createdMovie.id)));
+        return HttpResponse.created(URI.create(String.format("/api/movies/%s", createdMovie.id)));
     }
 
     @Delete("/{bookId}")
