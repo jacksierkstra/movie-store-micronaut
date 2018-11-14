@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: movie.store.micronaut
+---
+testFramework: junit
+sourceLanguage: java
