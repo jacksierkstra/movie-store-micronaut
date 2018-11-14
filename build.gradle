@@ -35,7 +35,7 @@ dependencies {
     compile "io.micronaut.configuration:micronaut-jdbc-hikari"
     compile "org.projectlombok:lombok:1.18.4"
     compile "io.micronaut.configuration:micronaut-hibernate-validator"
-    runtime "com.h2database:h2"
+    runtime 'org.postgresql:postgresql:42.2.4'
     compileOnly "io.micronaut:micronaut-inject-java"
     runtime "ch.qos.logback:logback-classic:1.2.3"
     testCompile "junit:junit:4.12"
